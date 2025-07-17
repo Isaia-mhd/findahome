@@ -1,5 +1,9 @@
 @extends('layouts.app')
+@section("title")
+Home
+@endsection
 @section('content')
+    @include("components.success")
     <section class="bg-blue-100 py-16">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold text-blue-800 mb-4">Find Your Dream Home</h2>
