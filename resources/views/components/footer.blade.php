@@ -1,5 +1,6 @@
 <!-- Footer -->
 <footer class="bg-white border-t border-gray-100 shadow mt-12 pt-10 pb-6 text-gray-700">
+    @include("components.subscriber")
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <!-- Column 1 -->

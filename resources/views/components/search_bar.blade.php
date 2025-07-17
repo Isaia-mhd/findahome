@@ -1,4 +1,4 @@
-<form action="" method="GET" class="flex items-center space-x-2">
+<form action="" method="GET" class="hidden lg:flex items-center space-x-2">
     <input
         type="text"
         name="query"
