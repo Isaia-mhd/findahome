@@ -10,6 +10,6 @@
         </form>
     @else
         <a href="{{ route("user.login") }}" class="text-blue-600 font-semibold">Login</a>
-        <a href="{{ route("user.register") }}" class="text-blue-600 font-semibold">Register</a>
+        <a href="{{ route("user.register") }}" class="text-blue-600 font-semibold hidden sm:inline">Register</a>
     @endauth
 </nav>

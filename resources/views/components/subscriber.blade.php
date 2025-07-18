@@ -1,5 +1,5 @@
 <h3 class="text-center uppercase py-2">Subscribe to Our Newsletters</h3>
-<form action="{{ route('subscribe') }}" method="POST" class="px-3 flex gap-2 items-center mb-6">
+<form action="{{ route('subscribe') }}" method="POST" class="w-full px-3 flex gap-2 justify-center items-center mb-6">
     @csrf
    <div class="">
      <input type="email" name="email" placeholder="Enter your email"
