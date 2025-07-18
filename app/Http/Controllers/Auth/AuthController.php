@@ -13,16 +13,14 @@ class AuthController extends Controller
 {
     public function authenticate(AuthRequest $request)
     {
-
         $request->validated();
-
         $user = User::where("email", $request->email)->first();
         if(!$user || !Hash::check($request->password, $user->password))
         {
             return redirect()->back()->with("error", "Credentials does not match.");
         }
         Auth::login($user);
-        return redirect()->intended(route("home"))->with("success","Logged In.");
+        return redirect()->intended(route("home"))->with("success","You are Logged In.");
 
     }
 

@@ -16,18 +16,10 @@ Home
     <section id="listings" class="py-12">
         <div class="container mx-auto px-4">
             <h3 class="text-2xl font-semibold text-center mb-8">Latest Properties</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                @for ($i = 1; $i <= 3; $i++)
-                    <div class="bg-white rounded shadow hover:shadow-md transition">
-                        <img src="{{ asset('example.jpg') }}" alt="House image" class="rounded-t w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h4 class="text-xl font-bold text-blue-700">Beautiful Family House</h4>
-                            <p class="text-sm text-gray-600">Fianarantsoa, Madagascar</p>
-                            <p class="text-lg font-semibold text-green-600 mt-2">$500/month</p>
-                            <a href="#" class="block text-blue-500 mt-3 hover:underline">View Details</a>
-                        </div>
-                    </div>
-                @endfor
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                @foreach ($listings as $listing )
+                    @include("components.listing_card")
+                @endforeach
             </div>
         </div>
     </section>

@@ -1,8 +1,9 @@
 <nav class="space-x-4">
     <a href="{{ route("home") }}" class="text-gray-600 hover:text-blue-600">Home</a>
-    <a href="#" class="text-gray-600 hover:text-blue-600">Listings</a>
+    <a href="{{ route("listings.index") }}" class="text-gray-600 hover:text-blue-600">Listings</a>
     <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
     @auth
+        <a href="{{ route("listings.create") }}" class="text-blue-600 font-semibold">Create New</a>
         <span class="text-green-600 font-semibold">{{ Auth::user()->name }}</span>
         <form method="POST" action="{{ route("user.logout") }}" class="inline">
             @csrf
